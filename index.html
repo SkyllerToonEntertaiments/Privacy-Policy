@@ -1,123 +1,160 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco Switch — Política de Privacidade</title>
   <style>
+    :root {
+      --bg1:#0f172a;
+      --bg2:#07162a;
+      --card:#fafafa;
+      --accent:#73d677;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.06);
+      --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      --radius:18px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body { height: 100%; }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #07121f;
-      color: #d7e2ee;
-      line-height: 1.6;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(115,214,119,0.06), transparent 10%),
+                  linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 100%);
+      color: var(--card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    header {
-      background: #0f1d2e;
-      padding: 50px 20px;
-      text-align: center;
-      border-bottom: 1px solid #103349;
+    .card {
+      width: 100%;
+      max-width: 880px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--card-shadow);
+      backdrop-filter: blur(6px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.05);
     }
 
-    header h1 {
-      color: #00ff80;
-      font-size: 32px;
-      margin-bottom: 15px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .mark {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg,#8ee08a,#43a047);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color:#05221a;
+      font-size: 22px;
+      box-shadow: 0 6px 20px rgba(8,28,16,0.35);
     }
 
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: auto;
-      padding: 25px 0;
+    h1 {
+      margin: 0;
+      font-size: 28px;
     }
 
     h2 {
-      color: #00ff80;
-      margin-top: 30px;
-      font-size: 22px;
+      margin-top: 26px;
+      font-size: 20px;
+      color: var(--accent);
     }
 
-    a {
-      color: #25a6ff;
-      text-decoration: none;
+    p, ul, li {
+      color: var(--card);
+      line-height: 1.55;
+      font-size: 15px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    ul { margin: 8px 0 16px 20px; }
 
-    ul {
-      margin-left: 20px;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     footer {
-      margin-top: 50px;
-      padding: 20px;
+      margin-top: 26px;
       text-align: center;
-      border-top: 1px solid #103349;
-      background: #0f1d2e;
-      color: #8ea6be;
-      font-size: 14px;
+      font-size: 13px;
+      color: var(--muted);
     }
   </style>
 </head>
+
 <body>
+  <main class="card" role="main">
+    
+    <div class="logo">
+      <div class="mark">ES</div>
+      <div>
+        <h1>Política de Privacidade</h1>
+        <p style="color:var(--muted);font-size:13px;margin-top:4px">Eco Switch — Preserve o Futuro</p>
+      </div>
+    </div>
 
-<header>
-  <h1>Política de Privacidade</h1>
-  <p>Seu uso deste aplicativo implica a aceitação dos termos desta Política.</p>
-</header>
+    <p>Esta Política de Privacidade aplica-se ao aplicativo Eco Switch (“Aplicativo”), criado pela SkyllerToon (“Fornecedora de Serviços”), como um serviço gratuito. O serviço é fornecido “NO ESTADO EM QUE SE ENCONTRA”.</p>
 
-<div class="container">
+    <h2>Coleta e uso de informações</h2>
+    <p>O Aplicativo pode coletar automaticamente informações como:</p>
 
-  <p>Esta política explica como coletamos, utilizamos, armazenamos e compartilhamos suas informações enquanto você utiliza este Aplicativo.</p>
+    <ul>
+      <li>Endereço IP do dispositivo.</li>
+      <li>Páginas acessadas, horário e tempo de navegação.</li>
+      <li>Tempo total de uso do Aplicativo.</li>
+      <li>Sistema operacional do dispositivo.</li>
+    </ul>
 
-  <h2>Coleta e Uso de Informações</h2>
-  <p>O Aplicativo pode solicitar informações como e-mail e ID de usuário para melhorar a experiência. Essas informações serão tratadas com segurança conforme esta Política.</p>
+    <p>O Aplicativo não coleta informações de localização precisa.</p>
 
-  <h2>Acesso de Terceiros</h2>
-  <p>Dados agregados e anonimizados podem ser enviados a serviços externos para melhorar o Aplicativo.</p>
-  <p><strong>Serviços utilizados:</strong></p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy">Google Play Services</a></li>
-    <li><a href="https://support.google.com/admob/answer/6128543?hl=pt-BR">AdMob</a></li>
-    <li><a href="https://godotengine.org/privacy-policy">Godot Engine</a></li>
-  </ul>
+    <p>O Provedor de Serviços poderá solicitar informações como e-mail e ID de usuário, mantidas conforme descrito nesta política.</p>
 
-  <p><strong>Informações podem ser divulgadas:</strong></p>
-  <ul>
-    <li>Quando exigido por lei</li>
-    <li>Para proteção de direitos, segurança ou investigação de fraudes</li>
-    <li>Com parceiros confiáveis que seguem esta política</li>
-  </ul>
+    <h2>Acesso de terceiros</h2>
+    <p>Somente dados agregados e anonimizados podem ser compartilhados com serviços externos para melhorias no Aplicativo.</p>
+    <p>O Aplicativo utiliza serviços de terceiros, que possuem suas próprias políticas:</p>
 
-  <h2>Direito de Optar por Não Participar</h2>
-  <p>Você pode desinstalar o Aplicativo para interromper a coleta de dados.</p>
+    <ul>
+      <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
+      <li><a href="https://godotengine.org/privacy-policy" target="_blank">Godot Engine</a></li>
+    </ul>
 
-  <h2>Retenção de Dados</h2>
-  <p>Os dados são mantidos enquanto você utiliza o Aplicativo e por tempo razoável após. Para solicitar remoção, entre em contato:</p>
-  <p><strong>Email:</strong> skyllertoonentertainments@gmail.com</p>
+    <h2>Opt-out</h2>
+    <p>Você pode interromper a coleta de dados desinstalando o Aplicativo.</p>
 
-  <h2>Crianças</h2>
-  <p>O Aplicativo não se destina ao uso por crianças menores de 13 anos. Caso dados sejam coletados inadvertidamente, serão removidos imediatamente.</p>
+    <h2>Retenção de Dados</h2>
+    <p>Os dados permanecem armazenados enquanto o Aplicativo estiver em uso, podendo ser solicitada exclusão pelo e-mail: <strong>skyllertoonentertainments@gmail.com</strong>.</p>
 
-  <h2>Segurança</h2>
-  <p>Empregamos medidas para proteger seus dados, mas nenhum método eletrônico é 100% seguro.</p>
+    <h2>Crianças</h2>
+    <p>Eco Switch não é destinado a menores de 13 anos. Caso seja identificada coleta acidental, os dados serão removidos imediatamente.</p>
 
-  <h2>Alterações nesta Política</h2>
-  <p>Podemos atualizar esta Política ocasionalmente. Recomendamos revisar esta página periodicamente.</p>
+    <h2>Segurança</h2>
+    <p>O Provedor de Serviços aplica medidas técnicas e organizacionais para proteger seus dados.</p>
 
-  <h2>Contato</h2>
-  <p>Se tiver dúvidas sobre esta Política, entre em contato: <br>
-  <strong>skyllertoonentertainments@gmail.com</strong></p>
+    <h2>Mudanças</h2>
+    <p>Esta política pode ser atualizada periodicamente. Recomendamos revisões regulares.</p>
 
-</div>
+    <p>Data de entrada em vigor: <strong>01/11/2025</strong></p>
 
-<footer>
-  © 2025 SkyllerToon Entertainments – Todos os direitos reservados
-</footer>
+    <h2>Consentimento</h2>
+    <p>Ao utilizar o Aplicativo, você concorda com os termos descritos aqui.</p>
 
+    <h2>Contato</h2>
+    <p>Em caso de dúvidas, contate: <strong>skyllertoonentertainments@gmail.com</strong></p>
+
+    <footer>
+      Esta política foi baseada no App Privacy Policy Generator.
+    </footer>
+
+  </main>
 </body>
 </html>
