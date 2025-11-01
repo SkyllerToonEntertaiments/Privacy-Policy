@@ -1,104 +1,130 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eco Switch — Política de Privacidade</title>
-  <style>
-    :root {
-      --bg1:#0f172a;
-      --bg2:#07162a;
-      --card:#fafafa;
-      --accent:#73d677;
-      --muted:#9aa4b2;
-      --glass: rgba(255,255,255,0.06);
-      --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
-      --radius:18px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
-    }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Eco Switch — Política de Privacidade</title>
+<style>
+:root{
+ --bg1:#0f172a;
+ --bg2:#07162a;
+ --card:#fafafa;
+ --accent:#73d677;
+ --muted:#9aa4b2;
+ --card-shadow:0 10px 30px rgba(2,6,23,0.6);
+ --radius:18px;
+ font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
 
-    body {
-      margin: 0;
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(115,214,119,0.06), transparent 10%),
-                  linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 100%);
-      color: var(--card);
-      padding: 32px 20px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+html,body{height:100%;}
+body{
+ margin:0;
+ background: radial-gradient(1200px 600px at 10% 10%, rgba(115,214,119,0.06), transparent 10%),
+            linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 100%);
+ color:var(--card);
+ display:flex;
+ justify-content:center;
+ padding:32px;
+ -webkit-font-smoothing:antialiased;
+}
 
-    .card {
-      width: 100%;
-      max-width: 880px;
-      margin: 48px auto;
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border-radius: var(--radius);
-      padding: 34px;
-      box-shadow: var(--card-shadow);
-      backdrop-filter: blur(6px) saturate(120%);
-      border: 1px solid rgba(255,255,255,0.05);
-    }
+.scene{
+ width:900px;
+ max-width:100%;
+ display:flex;
+ align-items:flex-start;
+ justify-content:center;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
+.card{
+ background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+ border-radius:var(--radius);
+ padding:36px;
+ box-shadow:var(--card-shadow);
+ backdrop-filter: blur(6px) saturate(120%);
+ border: 1px solid rgba(255,255,255,0.04);
+}
 
-    .mark {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      background: linear-gradient(135deg,#8ee08a,#43a047);
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-      color:#05221a;
-      font-size: 22px;
-      box-shadow: 0 6px 20px rgba(8,28,16,0.35);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    h2 {
-      margin-top: 26px;
-      font-size: 20px;
-      color: var(--accent);
-    }
-
-    p, ul, li {
-      color: var(--card);
-      line-height: 1.55;
-      font-size: 15px;
-    }
-
-    ul { margin: 8px 0 16px 20px; }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    footer {
-      margin-top: 26px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
-    }
-  </style>
+.logo{
+ display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.logo .mark{
+ width:56px;height:56px;border-radius:12px;
+ background:linear-gradient(135deg,#8ee08a,#43a047);
+ display:grid;place-items:center;
+ font-weight:700;color:#05221a;font-size:24px;
+ box-shadow:0 6px 20px rgba(8,28,16,0.35);
+}
+h1{margin:0;font-size:28px;letter-spacing:-0.01em;}
+p, li{color:var(--muted);line-height:1.55;font-size:15px;}
+ul{margin-bottom:16px;}
+strong{color:var(--card);font-size:18px;}
+hr{border:1px solid rgba(255,255,255,0.06);margin:24px 0;}
+a{color:var(--accent);}
+footer{text-align:center;margin-top:24px;font-size:13px;color:var(--muted);}
+</style>
 </head>
 
 <body>
-  <main class="card">
-    
-    <div class="logo">
-      <div class="mark">ES</div>
-      <div>
-        <h1>Política de Privacidade</h1>
-        <p style="color:var(--muted);font-size:13px;margin-top:4px">Eco Switch — Preserve o Futuro</p>
-      </div>
-    </div>
+<main class="scene">
+<section class="card">
 
-    <!-- Conteúdo permanece igual -->
+<div class="logo">
+ <div class="mark">ES</div>
+ <div>
+  <h1>Política de Privacidade</h1>
+ </div>
+</div>
+
+<p>Esta política de privacidade aplica-se ao aplicativo Eco Switch (“Aplicativo”) desenvolvido pela SkyllerToon (“Fornecedora de Serviços”) como um serviço gratuito.</p>
+
+<br><strong>Coleta e Uso de Informações</strong>
+<p>O aplicativo coleta informações quando você o baixa e utiliza, incluindo:</p>
+<ul>
+ <li>Endereço IP do dispositivo.</li>
+ <li>Páginas acessadas, horários e tempo de uso.</li>
+ <li>Sistema operacional do dispositivo.</li>
+</ul>
+
+<p>O aplicativo não coleta localização exata do dispositivo.</p>
+
+<p>O provedor poderá usá-las para contato informativo ou promocional.</p>
+
+<br><strong>Acesso de Terceiros</strong>
+<p>Dados podem ser compartilhados apenas de forma agregada e anônima com serviços externos para melhorias.</p>
+
+<p>Serviços utilizados e suas políticas de privacidade:</p>
+<ul>
+ <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+ <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
+ <li><a href="https://godotengine.org/privacy-policy" target="_blank">Godot</a></li>
+</ul>
+
+<br><strong>Direito de Exclusão</strong>
+<p>Se desejar excluir seus dados, entre em contato: skyllertoonentertainments@gmail.com</p>
+
+<br><strong>Retenção de Dados</strong>
+<p>Os dados serão mantidos enquanto você usar o app e por tempo razoável após o término.</p>
+
+<br><strong>Crianças</strong>
+<p>O aplicativo não é destinado a menores de 13 anos. Caso dados sejam enviados por crianças, serão removidos imediatamente mediante aviso.</p>
+
+<br><strong>Segurança</strong>
+<p>Medidas físicas, eletrônicas e processuais são adotadas para proteger os dados.</p>
+
+<br><strong>Mudanças</strong>
+<p>Esta política pode mudar periodicamente. Última atualização: 01/11/2025</p>
+
+<br><strong>Consentimento</strong>
+<p>Ao usar o app, você concorda com esta Política de Privacidade.</p>
+
+<br><strong>Contato</strong>
+<p>E-mail: skyllertoonentertainments@gmail.com</p>
+
+<hr>
+<footer>Eco Switch — Preserve o Futuro</footer>
+
+</section>
+</main>
+</body>
+</html>
